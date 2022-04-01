@@ -17,13 +17,7 @@ function setup() {
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.mousePressed(canvasPressed);
 
-    for (let i = 0; i < left.length; i++) {
-left[i].addCue(left[i].duration(), random(left).play());
 
-/*
-        left[i].addCue(left[i].duration(), function(){random(left).play()});
-*/
-    }
 
     // Clear with black on setup
 
@@ -57,15 +51,26 @@ function draw() {
 
 function canvasPressed() {
 
-    if (mouseX <= windowWidth / 2 - 20) {
+    if (mouseX <= windowWidth / 2 - 120) {
 
-        random(left).play();
+    for (let i = 0; i < left.length; i++) {
+left[i].addCue(left[i].duration(), random(left).play());
 
+/*
+        left[i].addCue(left[i].duration(), function(){random(left).play()});
+*/
+    }
     }
 
     if (mouseX >= windowWidth / 2 + 20) {
+    
+    for (let i = 0; i < left.length; i++) {
+left[i].addCue(left[i].duration(), random(right).play());
 
-        random(right).play();
+/*
+        left[i].addCue(left[i].duration(), function(){random(left).play()});
+*/
+    }
 
     }
 }
