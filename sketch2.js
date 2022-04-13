@@ -1,6 +1,8 @@
 var left = [];
 var right = [];
 
+var dato = 0;
+
 // first test - loading samples for left channel * m4a is not working
 
 function preload() {
