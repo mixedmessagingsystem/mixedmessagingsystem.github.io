@@ -54,14 +54,14 @@ function play() {
 
             for (let i = 0; i < left.length; i++) {
 
-                left[i].addCue(left[i].duration(), random(left).loop());
+                left[i].addCue(left[i].duration(0.2), random(left).loop());
                 left[i].setVolume(0);
 
             }
 
             for (let i = 0; i < right.length; i++) {
 
-                right[i].addCue(right[i].duration(), random(right).loop());
+                right[i].addCue(right[i].duration(), random(right).play());
                 right[i].setVolume(0);
 
             }
@@ -104,11 +104,11 @@ function knob() {
 
 function paneando() {
 
-    if (mouseX <= windowWidth / 2 - 120) {
+    if (mouseX <= windowWidth / 2) {
 
         for (let i = 0; i < left.length; i++) {
 
-            left[i].setVolume(0.5);
+            left[i].setVolume(0.2);
 
         }
 
@@ -120,7 +120,7 @@ function paneando() {
 
     }
 
-    if (mouseX >= windowWidth / 2 + 20) {
+    if (mouseX >= windowWidth / 2 ) {
 
         for (let i = 0; i < left.length; i++) {
 
@@ -130,11 +130,11 @@ function paneando() {
         }
     }
 
-    if (mouseX >= windowWidth / 2 + 20) {
+    if (mouseX >= windowWidth / 2) {
 
         for (let i = 0; i < right.length; i++) {
 
-            right[i].setVolume(0.5);
+            right[i].setVolume(0.2);
 
 
         }
