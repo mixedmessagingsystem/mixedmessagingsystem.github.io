@@ -54,14 +54,14 @@ function play() {
 
             for (let i = 0; i < left.length; i++) {
 
-                left[i].addCue(left[i].duration(0.2), random(left).loop());
+                left[i].addCue(left[i].duration(), random(left).loop());
                 left[i].setVolume(0);
 
             }
 
             for (let i = 0; i < right.length; i++) {
 
-                right[i].addCue(right[i].duration(), random(right).play());
+                right[i].addCue(right[i].duration(), random(right).loop());
                 right[i].setVolume(0);
 
             }
@@ -108,7 +108,7 @@ function paneando() {
 
         for (let i = 0; i < left.length; i++) {
 
-            left[i].setVolume(0.2);
+            left[i].setVolume(0.1);
 
         }
 
@@ -134,7 +134,7 @@ function paneando() {
 
         for (let i = 0; i < right.length; i++) {
 
-            right[i].setVolume(0.2);
+            right[i].setVolume(0.12);
 
 
         }

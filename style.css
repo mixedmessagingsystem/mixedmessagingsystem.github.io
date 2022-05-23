@@ -3,6 +3,7 @@ body {
     margin: 0;
     cursor: pointer;
     background: #000;
+    color: #fff;
 }
 
 button {
@@ -27,7 +28,15 @@ footer h1 { font-size:120px; color:#A2B1B1; font-weight:bold; opacity:0.43; disp
 
 .page { position:absolute; /*top:0px;*/ opacity:0; transition:1.25s; }
 
-#p5_loading { background: #000; text-align:center; display:block; width:100%; top:50%; margin-top:-17px; margin-top:-75px; position:absolute; }
+#p5_loading { 
+	background: #000; 
+	text-align:center; 
+	display:block; 
+	width:100%; 
+	top:50%; 
+	margin-top:-87px; 
+	margin-top:-75px; 
+	position:absolute; }
 
 @media (max-width: 1024px) {
     header p { display:none; }

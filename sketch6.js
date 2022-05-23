@@ -5,15 +5,13 @@ var button;
 
 let value = 0;
 
-let loopStart = 0.5;
-let loopDuration = 0.2;
-
 
 // loading samples 
 
 function preload() {
 
     left.push(loadSound('left/00.mp3'));
+   /*
     left.push(loadSound('left/02.mp3'));
     left.push(loadSound('left/03.mp3'));
     left.push(loadSound('left/04.mp3'));
@@ -23,8 +21,10 @@ function preload() {
     left.push(loadSound('left/08.mp3'));
     left.push(loadSound('left/09.mp3'));
     left.push(loadSound('left/10.mp3'));
+    */
 
     right.push(loadSound('right/00.mp3'));
+    /*
     right.push(loadSound('right/01.mp3'));
     right.push(loadSound('right/02.mp3'));
     right.push(loadSound('right/03.mp3'));
@@ -35,6 +35,7 @@ function preload() {
     right.push(loadSound('right/08.mp3'));
     right.push(loadSound('right/09.mp3'));
     right.push(loadSound('right/10.mp3'));
+    */
 }
 
 
@@ -44,7 +45,6 @@ function setup() {
 
     // Clear with black on setup
 
-    frameRate(10);
     background(0);
 
 
