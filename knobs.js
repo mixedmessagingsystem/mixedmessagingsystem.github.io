@@ -15,16 +15,22 @@ function stop() {
         if (dist(mouseX, mouseY, x_s, y_s) < d_s / 2 && mouseButton == LEFT) {
 
             fill(0); // Black
-
+            stopped = true;
             for (let i = 0; i < left.length; i++) {
-
-                left[i].addCue(left[i].duration(), random(left).stop());
+                left[i].stop();
             }
-
             for (let i = 0; i < right.length; i++) {
-
-                right[i].addCue(right[i].duration(), random(right).stop());
+                right[i].stop();
             }
+            // for (let i = 0; i < left.length; i++) {
+
+            //     left[i].addCue(left[i].duration(), random(left).stop());
+            // }
+
+            // for (let i = 0; i < right.length; i++) {
+
+            //     right[i].addCue(right[i].duration(), random(right).stop());
+            // }
 
 
         }
@@ -52,20 +58,24 @@ function play() {
 
             fill(0); // Black
 
-            for (let i = 0; i < left.length; i++) {
+            // for (let i = 0; i < left.length; i++) {
 
-                left[i].addCue(left[i].duration(), random(left).loop());
-                left[i].setVolume(0);
+            //     left[i].addCue(left[i].duration(), random(left).loop());
+            //     left[i].setVolume(0);
 
-            }
+            // }
 
-            for (let i = 0; i < right.length; i++) {
+            // for (let i = 0; i < right.length; i++) {
 
-                right[i].addCue(right[i].duration(), random(right).loop());
-                right[i].setVolume(0);
+            //     right[i].addCue(right[i].duration(), random(right).loop());
+            //     right[i].setVolume(0);
 
-            }
-
+            // }
+            // random(left).play();
+            // random(right).play();
+            stopped = false;
+            playNextLeft();
+            playNextRight();
 
         }
 
