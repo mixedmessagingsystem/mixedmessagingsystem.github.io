@@ -101,7 +101,8 @@ function knob() {
     const w = max(0, min(1, mouseX / width));
     translate(width / 2, height / 2);
     noStroke();
-    fill(200);
+    //fill(200);
+    fill(255);
 
     ellipse(0, 0, 130, 130);
 
