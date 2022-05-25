@@ -101,7 +101,7 @@ function knob() {
 
     ellipse(0, 0, 130, 130);
 
-    rotate(-40 + w * 4.7);
+    rotate(-40 + w * 4.6);
     //print(mouseX);
     fill(0, 0, 0);
     rectMode(CENTER);
@@ -114,13 +114,19 @@ function knob() {
 
 function paneando() {
 
-    if (mouseX <= windowWidth / 2) {
+
+
+    if (mouseX <= windowWidth / 2 + 10) {
 
         for (let i = 0; i < left.length; i++) {
 
             left[i].setVolume(0.1);
 
         }
+
+}
+
+    if (mouseX <= windowWidth / 2 - 10) {
 
         for (let i = 0; i < right.length; i++) {
 
@@ -130,22 +136,20 @@ function paneando() {
 
     }
 
-    if (mouseX >= windowWidth / 2 ) {
+    if (mouseX >= windowWidth / 2 + 10) {
 
         for (let i = 0; i < left.length; i++) {
 
             left[i].setVolume(0);
 
-
         }
     }
 
-    if (mouseX >= windowWidth / 2) {
+    if (mouseX >= windowWidth / 2 - 10) {
 
         for (let i = 0; i < right.length; i++) {
 
-            right[i].setVolume(0.12);
-
+            right[i].setVolume(0.3);
 
         }
     }

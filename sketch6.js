@@ -48,16 +48,16 @@ function draw() {
             // console.log("EVERYTHING IS LOADED NOW");
             allSoundsAreLoaded = true;
             playNextLeft = function() {
-                if (stopped == false) { 
+                if (stopped == false) {
                     let s = random(left);
                     s.play();
                     // console.log("playing the next left");
                     setTimeout(playNextLeft, (s.duration() * 0.9) * 1000);
                 }
-                
+
             };
             playNextRight = function() {
-                if (stopped == false) { 
+                if (stopped == false) {
                     let s = random(right);
                     s.play();
                     // console.log("playing the next right");
@@ -76,9 +76,8 @@ function draw() {
 
     }
 
-        // When all the sounds are loaded
-
-    else  {
+    // When all the sounds are loaded
+    else {
 
         // Draw the knob 
 
@@ -97,7 +96,7 @@ function draw() {
         push();
         paneando();
         pop();
-    }    
+    }
 }
 
 
@@ -108,24 +107,88 @@ function loadAllSounds() {
     left.push(loadSound('left/00.mp3'));
     left.push(loadSound('left/02.mp3'));
     left.push(loadSound('left/03.mp3'));
-    // left.push(loadSound('left/04.mp3'));
-    // left.push(loadSound('left/05.mp3'));
-    // left.push(loadSound('left/06.mp3'));
-    // left.push(loadSound('left/07.mp3'));
-    // left.push(loadSound('left/08.mp3'));
-    // left.push(loadSound('left/09.mp3'));
-    // left.push(loadSound('left/10.mp3'));
-    right.push(loadSound('right/00.mp3'));    
+    left.push(loadSound('left/04.mp3'));
+    left.push(loadSound('left/05.mp3'));
+    left.push(loadSound('left/06.mp3'));
+    left.push(loadSound('left/07.mp3'));
+    left.push(loadSound('left/08.mp3'));
+    left.push(loadSound('left/09.mp3'));
+    left.push(loadSound('left/10.mp3'));
+    left.push(loadSound('left/11.mp3'));
+    left.push(loadSound('left/12.mp3'));
+    left.push(loadSound('left/13.mp3'));
+    left.push(loadSound('left/14.mp3'));
+    left.push(loadSound('left/15.mp3'));
+    left.push(loadSound('left/16.mp3'));
+    left.push(loadSound('left/17.mp3'));
+    left.push(loadSound('left/18.mp3'));
+    left.push(loadSound('left/19.mp3'));
+    left.push(loadSound('left/20.mp3'));
+    left.push(loadSound('left/21.mp3'));
+    left.push(loadSound('left/22.mp3'));
+    left.push(loadSound('left/23.mp3'));
+    left.push(loadSound('left/24.mp3'));
+    left.push(loadSound('left/25.mp3'));
+    left.push(loadSound('left/26.mp3'));
+    left.push(loadSound('left/27.mp3'));
+    left.push(loadSound('left/28.mp3'));
+    left.push(loadSound('left/29.mp3'));
+    left.push(loadSound('left/30.mp3'));
+    left.push(loadSound('left/31.mp3'));
+    left.push(loadSound('left/32.mp3'));
+    left.push(loadSound('left/33.mp3'));
+    left.push(loadSound('left/34.mp3'));
+    left.push(loadSound('left/35.mp3'));
+    left.push(loadSound('left/36.mp3'));
+    left.push(loadSound('left/37.mp3'));
+    left.push(loadSound('left/38.mp3'));
+    left.push(loadSound('left/39.mp3'));
+    left.push(loadSound('left/40.mp3'));
+    left.push(loadSound('left/41.mp3'));
+    left.push(loadSound('left/42.mp3'));
+    left.push(loadSound('left/43.mp3'));
+    left.push(loadSound('left/44.mp3'));
+    left.push(loadSound('left/45.mp3'));
+    left.push(loadSound('left/46.mp3'));
+    left.push(loadSound('left/47.mp3'));
+    left.push(loadSound('left/48.mp3'));
+    left.push(loadSound('left/49.mp3'));
+    left.push(loadSound('left/50.mp3'));
+
+
+    right.push(loadSound('right/00.mp3'));
     right.push(loadSound('right/01.mp3'));
     right.push(loadSound('right/02.mp3'));
-    // right.push(loadSound('right/03.mp3'));
-    // right.push(loadSound('right/04.mp3'));
-    // right.push(loadSound('right/05.mp3'));
-    // right.push(loadSound('right/06.mp3'));
-    // right.push(loadSound('right/07.mp3'));
-    // right.push(loadSound('right/08.mp3'));
-    // right.push(loadSound('right/09.mp3'));
-    // right.push(loadSound('right/10.mp3'));
+    right.push(loadSound('right/03.mp3'));
+    right.push(loadSound('right/04.mp3'));
+    right.push(loadSound('right/05.mp3'));
+    right.push(loadSound('right/06.mp3'));
+    right.push(loadSound('right/07.mp3'));
+    right.push(loadSound('right/08.mp3'));
+    right.push(loadSound('right/09.mp3'));
+    right.push(loadSound('right/10.mp3'));
+    right.push(loadSound('right/11.mp3'));
+    right.push(loadSound('right/12.mp3'));
+    right.push(loadSound('right/13.mp3'));
+    right.push(loadSound('right/14.mp3'));
+    right.push(loadSound('right/15.mp3'));
+    right.push(loadSound('right/16.mp3'));
+    right.push(loadSound('right/17.mp3'));
+    right.push(loadSound('right/18.mp3'));
+    right.push(loadSound('right/19.mp3'));
+    right.push(loadSound('right/20.mp3'));
+    right.push(loadSound('right/21.mp3'));
+    right.push(loadSound('right/22.mp3'));
+    right.push(loadSound('right/23.mp3'));
+    right.push(loadSound('right/24.mp3'));
+    right.push(loadSound('right/25.mp3'));
+    right.push(loadSound('right/26.mp3'));
+    right.push(loadSound('right/27.mp3'));
+    right.push(loadSound('right/28.mp3'));
+    right.push(loadSound('right/29.mp3'));
+    right.push(loadSound('right/30.mp3'));
+    right.push(loadSound('right/31.mp3'));
+
 }
 
 
