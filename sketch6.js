@@ -59,7 +59,7 @@ function draw() {
                     let s = random(left);
                     s.play();
                     // console.log("playing the next left");
-                    setTimeout(playNextLeft, (s.duration() * 0.9) * 1000);
+                    setTimeout(playNextLeft, (s.duration()) * 990);
                 }
 
             };
