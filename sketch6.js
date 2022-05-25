@@ -8,6 +8,9 @@ let allSoundsAreLoaded = false;
 let playNextLeft, playNextRight;
 let stopped = false;
 
+var contador = 1;
+var dato = 1;
+
 function setup() {
 
     let cnv = createCanvas(windowWidth, windowHeight);
@@ -23,14 +26,18 @@ function setup() {
 // Render loop that draws shapes with p5
 
 function draw() {
+
+
     // Black background
-    background(0);
+    background(0, 0, 255);
 
     // Before all the sounds are loaded
     if (!allSoundsAreLoaded) {
         fill(255);
+        // agregar loading
+        
         ellipse(windowWidth / 2, windowHeight / 2, Math.sin(frameCount * 0.1) * 20);
-        fill(255, 0, 0);
+        fill(0, 0, 0);
         ellipse(windowWidth / 2, windowHeight / 2, Math.sin(frameCount * 0.1) * 10);
         fill(255);
         let loaded = true;
@@ -80,9 +87,13 @@ function draw() {
     else {
 
         // Draw the knob 
-
+       /*
         push();
-        knob();
+        pan_vis();
+        pop();
+*/
+        push();
+        play();
         pop();
 
         push();
@@ -90,12 +101,13 @@ function draw() {
         pop();
 
         push();
-        play();
+        paneando();
         pop();
 
         push();
-        paneando();
+        knob();
         pop();
+
     }
 }
 

@@ -1,14 +1,18 @@
-var x_p = 100;
+var x_p;
 var y_p = 100;
 var d_p = 20;
 
 
-var x_s = 180;
+var x_s;
 var y_s = 100;
 var d_s = 30;
 
 
 function stop() {
+
+x_p = windowWidth/2;
+x_s = windowWidth/2 + 50;
+
 
     if (mouseIsPressed == true) {
 
@@ -112,6 +116,16 @@ function knob() {
 }
 
 
+function pan_vis(){
+        if (stopped == false && mouseX <= windowWidth / 2 + 10) {
+             izquierda();
+    }
+
+         if (stopped == false && mouseX >= windowWidth / 2 - 10) {
+             derecha();
+    }
+}
+
 function paneando() {
 
 
@@ -154,6 +168,7 @@ function paneando() {
         }
     }
 }
+
 
 
 
